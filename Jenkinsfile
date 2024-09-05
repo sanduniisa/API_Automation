@@ -4,7 +4,10 @@ pipeline {
     stages {
         stage('Checkout Code') {
             steps {
-                git branch: 'main', url: 'https://github.com/sanduniisa/API_Automation.git'
+                checkout([$class: 'GitSCM', 
+                          branches: [[name: '*/master']], // Update to master branch
+                          userRemoteConfigs: [[url: 'https://github.com/sanduniisa/API_Automation.git']]
+                ])
             }
         }
 
