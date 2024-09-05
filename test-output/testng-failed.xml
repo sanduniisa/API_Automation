@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="none" name="Failed suite [Suite]">
+  <test parallel="none" name="Test(failed)" preserve-order="true">
+    <classes>
+      <class name="org.testing.testScripts.TC1_PostRequest">
+        <methods>
+          <include name="setup"/>
+        </methods>
+      </class>
+      <class name="org.testing.testScripts.TC2_PostRequestOnDummyAPI">
+        <methods>
+          <include name="testcasedummy"/>
+        </methods>
+      </class>
+      <class name="org.testing.testScripts.TC5_PutRequest">
+        <methods>
+          <include name="testCase7"/>
+        </methods>
+      </class>
+    </classes>
+  </test>
+</suite>
