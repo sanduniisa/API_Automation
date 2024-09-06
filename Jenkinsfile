@@ -31,12 +31,4 @@ pipeline {
             }
         }
     }
-
-    post {
-        always {
-            script {
-                sh 'lsof -t -i:3000 | xargs kill -9'
-            }
-        }
-    }
 }
